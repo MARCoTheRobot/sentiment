@@ -1,4 +1,4 @@
 module.exports = {
-    labels: require('./labels.json'),
+    labels: require('./marcoCustomSentimentLabels.json'),
     scoringStrategy: require('./scoring-strategy')
 };
