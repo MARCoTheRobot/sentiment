@@ -1,0 +1,22 @@
+{
+    "very": 1,
+    "extremely": 2,
+    "fucking": 2,
+    "freaking": 2,
+    "kinda": -1,
+    "sorta": -1,
+    "fairly": -1,
+    "maximum": 2,
+    "incredibly": 2,
+    "motherfucking": 2,
+    "flipping": 1,
+    "moderately": -1,
+    "decently": -1,
+    "overwhelmingly": 2,
+    "positively": 1,
+    "effing": 2,
+    "effin": 2,
+    "vaguely":-1,
+    "minimally":-2
+    
+}

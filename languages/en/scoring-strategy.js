@@ -1,5 +1,6 @@
 var negators = require('./negators.json');
-var Vector = require('../../lib/vector.js')
+var Vector = require('../../lib/vector.js');
+var emphasizers = require('./emphasizers.json');
 
 
 module.exports = {
@@ -10,6 +11,13 @@ module.exports = {
             if (negators[prevtoken] || negators[tokens[cursor - 2]]) {
                 tokenScore.scalarMult(-1);
             }
+            if(emphasizers[prevtoken])
+                {
+                    for(let i = 0; i < tokenScore.vec.length; i++)
+                        {
+                            tokenScore.vec[i] += Math.sign(tokenScore.vec[i])*emphasizers[prevtoken];
+                        }
+                }
         }
         return tokenScore;
     }
