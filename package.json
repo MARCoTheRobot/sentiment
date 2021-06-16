@@ -1,13 +1,13 @@
 {
   "author": "Andrew Sliwinski <andrewsliwinski@acm.org>",
-  "name": "sentiment",
+  "name": "multipoint-sentiment",
   "description": "AFINN-based sentiment analysis for Node.js",
-  "version": "5.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "homepage": "https://github.com/thisandagain/sentiment",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thisandagain/sentiment.git"
+    "url": "git+https://github.com/thisandagain/sentiment.git"
   },
   "keywords": [
     "sentiment",
@@ -36,5 +36,16 @@
   },
   "engines": {
     "node": ">=8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/thisandagain/sentiment/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "@tensorflow-models/universal-sentence-encoder": "^1.3.3",
+    "@tensorflow/tfjs": "^3.7.0"
   }
 }
